@@ -8,13 +8,13 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: linear-gradient(to right, white, #fde2e4, #fad2e1, #f8bbd0);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to right, white, #fde2e4, #fad2e1, #f8bbd0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -27,19 +27,20 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9); /* Sedikit lebih solid di mobile */
     backdrop-filter: blur(10px);
     z-index: 100;
 }
 
 header .logo {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Sedikit lebih kecil di HP */
     font-weight: 800;
     color: #d81b60;
     cursor: pointer;
     transition: 0.5s ease;
     text-decoration: none;
 }
+/* Catatan: Anda perlu menambahkan CSS untuk membuat menu navigasi (nav a) disembunyikan dan diakses via tombol Hamburger di mobile */
 
 header nav a {
     margin-left: 20px;
@@ -191,22 +192,22 @@ header nav a:hover {
 }
 /* ===== EDUCATION SECTION ===== */
 .education {
-  background: linear-gradient(to right, #fde2e4, #fad2e1, #f8bbd0);;
-  padding: 100px 8% 50px;
-  text-align: center;
+    background: linear-gradient(to right, #fde2e4, #fad2e1, #f8bbd0);;
+    padding: 100px 8% 50px;
+    text-align: center;
 }
 
 .section-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #d81b60;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #d81b60;
 }
 
 .edu-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
 /* animasi scroll */
@@ -217,37 +218,37 @@ header nav a:hover {
 }
 
 .edu-card {
-  background: white;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  display: block;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .edu-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .edu-card img {
-  width: 100%;
-  height: 200px;      
-  object-fit: contain;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  background: #fff; 
-  padding: 5px; 
+    width: 100%;
+    height: 200px;      
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background: #fff; 
+    padding: 5px; 
 }
 
 .edu-card h3 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 0;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
 }
 
 /* experience */
@@ -283,7 +284,7 @@ header nav a:hover {
 .achievements h3 {
     text-align: center;
     font-size: 2em;
-    color: #d81b60; /* Warna judul Achievements (merah tua/pink gelap) */
+    color: #d81b60;
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 3px solid #f8bbd0;
@@ -291,8 +292,8 @@ header nav a:hover {
 
 /* Mengubah layout agar foto di atas, teks di bawah */
 .achievement-item {
-    display: block; /* Menggunakan block agar elemen stack secara vertikal */
-    text-align: center; /* Rata tengah untuk semua konten di dalamnya */
+    display: block;
+    text-align: center;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 8px;
@@ -301,31 +302,30 @@ header nav a:hover {
 }
 
 .achievement-item:hover {
-    background-color: #ffe0ee; /* Warna hover ringan yang pinkish */
-    transform: translateY(-3px); /* Efek sedikit terangkat saat di-hover */
+    background-color: #ffe0ee;
+    transform: translateY(-3px);
 }
 
 .achievement-logo {
-    width: 100%; /* Mengisi lebar penuh dari item, akan diatur oleh max-width */
-    max-width: 200px; /* Ukuran foto maksimal, bisa disesuaikan */
-    height: auto; /* Mempertahankan rasio aspek gambar */
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     object-fit: cover;
-    margin: 0 auto 20px auto; /* Memberikan margin di bawah foto dan membuatnya center */
-    border-radius: 8px; /* Menggunakan sudut bulat standar */
-    border: 3px solid #d81b60; /* Bingkai merah tua/pink gelap */
-    display: block; /* Agar margin auto bekerja */
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    border: 3px solid #d81b60;
+    display: block;
 }
 
 .achievement-details {
-    /* flex-grow: 1; -> tidak lagi diperlukan karena display: block */
-    text-align: center; /* Meratakan teks di tengah */
+    text-align: center;
 }
 
 .achievement-details h4 {
     font-size: 1.3em;
     color: #2c3e50;
     margin-top: 0;
-    margin-bottom: 10px; /* Memberi jarak lebih setelah judul */
+    margin-bottom: 10px;
 }
 
 .achievement-details ul, .achievement-details p {
@@ -333,26 +333,22 @@ header nav a:hover {
     margin-bottom: 5px;
     padding-left: 0;
     color: #555;
-    text-align: center; /* Meratakan teks di tengah */
+    text-align: center;
 }
 
 .achievement-details ul {
-    list-style: none; /* Hapus bullet point default */
-    padding-left: 0; /* Pastikan tidak ada padding kiri */
+    list-style: none;
+    padding-left: 0;
 }
 
 .achievement-details ul li {
     position: relative;
     margin-bottom: 5px;
-    /* padding-left: 15px; -> tidak perlu padding kiri jika teks di tengah */
-    display: block; /* Agar setiap list item menjadi block dan bisa di-center */
+    display: block;
 }
 
-/* Jika ingin custom bullet, sesuaikan agar center */
 .achievement-details ul li::before {
-    /* content: "•"; -> jika ingin bullet, bisa ditambahkan kembali dengan positioning */
-    /* Untuk layout center, bullet point manual seringkali dihindari atau diatur ulang */
-    display: none; /* Menyembunyikan bullet point custom karena sudah di-center */
+    display: none;
 }
 
 /* Styling untuk tombol Download PDF */
@@ -373,34 +369,18 @@ header nav a:hover {
     background-color: linear-gradient(135deg, #ec407a, #ad1457);;
 }
 
-@media (max-width: 768px) {
-    .achievement-item {
-        padding: 15px;
-    }
-    .achievement-logo {
-        max-width: 300px; /* Ukuran foto lebih kecil di mobile */
-        margin-bottom: 15px;
-    }
-    .achievement-details h4 {
-        font-size: 1.1em;
-    }
-    .achievement-details ul li, .achievement-details p {
-        font-size: 0.9em;
-    }
-}
-
+/* ORGANIZATION SECTION */
 .organization {
     width: 100%;
-    min-height: 100vh; /* Atau gunakan height: 100vh; jika Anda ingin persis 100% tinggi layar */
+    min-height: 100vh;
     padding: 20px 0;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     
-    /* PROPERTI BACKGROUND SUDAH BENAR */
     background-image: url('images/bg-org.png');
-    background-size: cover; /* Memastikan gambar menutupi seluruh area */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -411,8 +391,6 @@ header nav a:hover {
     width: 90%; 
     margin: 0 auto;
     padding: 30px; 
-    /* border-radius: 15px; */
-    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
 }
 
 /* Styling Kolom Kiri (Foto Diri) */
@@ -426,7 +404,6 @@ header nav a:hover {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* border: 5px solid #d81b60; Border Pink Gelap */
 }
 
 /* Styling Kolom Tengah (Teks) */
@@ -437,7 +414,7 @@ header nav a:hover {
 
 .org-title {
     font-size: 2.5em;
-    color: #d81b60; /* Pink Gelap */
+    color: #d81b60;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 5px;
@@ -445,7 +422,7 @@ header nav a:hover {
 
 .org-subtitle {
     font-size: 1.8em;
-    color: #d81b60; /* Pink Gelap */
+    color: #d81b60;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 20px;
@@ -476,8 +453,353 @@ header nav a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Queries untuk tampilan responsif */
+/* PROJECTS SECTION */
+.projects {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 60px 0;
+    text-align: center;
+}
+.project-carousel {
+    overflow-x: scroll; 
+    -webkit-overflow-scrolling: touch; 
+    scroll-snap-type: x mandatory; 
+    margin: 0; 
+    padding: 0;
+    padding-bottom: 30px;
+    
+    margin-left: -15px; 
+    padding-left: 15px; 
+}
+
+.projects .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #d81b60;
+}
+
+.carousel-track {
+    display: flex;
+    flex-shrink: 0;
+    gap: 30px;
+    width: fit-content;
+}
+
+.project-link {
+    text-decoration: none; 
+    color: inherit; 
+    flex-shrink: 0; 
+}
+
+.project-item {
+    flex-shrink: 0;
+    scroll-snap-align: start; 
+    
+    width: 300px; 
+    height: 375px; 
+    
+    background: #fff; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+}
+
+.project-link:hover .project-item {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img {
+    width: 100%;
+    flex-grow: 1; 
+    object-fit: contain; 
+    background-color: #f0f0f0; 
+    display: block;
+}
+
+.project-item h4 {
+    display: none; 
+}
+
+.project-item.project-wide {
+    height: 375px; 
+    width: 667px; 
+}
+
+.project-link.project-wide-link {
+    width: 667px; 
+    height: 375px; 
+}
+
+/* CERTIFICATES SECTION */
+.certificates {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.certificates .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px; 
+    margin-bottom: 40px; 
+    color: #d81b60;
+}
+
+.certificate-grid {
+    max-width: 1000px; 
+    margin: 0 auto 50px auto; 
+    padding: 0 20px;
+    display: grid;
+    /* 3 kolom untuk desktop */
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    gap: 20px; 
+    align-items: stretch; 
+    justify-content: center; 
+}
+
+.certificate-card {
+    background: #fff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    padding: 0; 
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+}
+
+/* Base styling untuk link dan gambar */
+.certificate-card a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover img {
+    transform: scale(1.02); 
+}
+
+.certificate-card.landscape a {
+    height: 220px; 
+}
+
+.certificate-card.landscape img {
+    object-fit: cover; 
+}
+
+.certificate-card.portrait a {
+    /* Tinggi yang disesuaikan agar proporsional untuk potret */
+    height: 320px; 
+}
+
+.certificate-card.portrait img {
+    /* Memastikan seluruh gambar potret terlihat (tidak terpotong) */
+    object-fit: contain;
+    /* Tambahkan latar belakang agar sisi kosong tidak transparan */
+    background-color: #ffffff;
+}
+
+.certificate-title {
+    padding: 8px 5px; 
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    flex-shrink: 0; 
+}
+
+.see-more {
+    margin-top: 50px; 
+}
+
+.see-more .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #d81b60; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 8px; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.see-more .btn-primary:hover {
+    background-color: #ad1457; 
+}
+
+/* ===================================== */
+/* === MEDIA QUERY (MOBILE FIX) === */
+/* ===================================== */
+@media (max-width: 768px) {
+    /* Grid di mobile menjadi 1 kolom penuh */
+    .certificate-grid {
+        grid-template-columns: 1fr; 
+        padding: 0 15px;
+        max-width: 400px; 
+    }
+    
+    /* Penyesuaian khusus untuk LANDSCAPE di mobile */
+    .certificate-card.landscape a {
+        /* Tinggi standar landscape di mobile */
+        height: 250px; 
+    }
+
+    /* Penyesuaian khusus untuk PORTRAIT di mobile */
+    .certificate-card.portrait a {
+        /* Ukuran potret di mobile (lebih tinggi) */
+        height: 350px; 
+    }
+    
+    .certificate-title {
+        font-size: 0.9em;
+    }
+}
+
+/* CONTACT SECTION */
+/* Tambahkan atau perbarui CSS Contact Me di sini */
+.contact {
+    background-color: #ffffff; 
+    padding: 100px 0;
+    text-align: center;
+    color: #333; 
+}
+
+.contact .section-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.contact .section-title .highlight {
+    color: #d81b60; 
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form textarea {
+    grid-column: 1 / -1; 
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: #ffffff; 
+    border-color: #d81b60; 
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.btn-send {
+    grid-column: 1 / -1; 
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    background-color: #d81b60; 
+    color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(216, 27, 96, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+    max-width: 250px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.btn-send:hover {
+    background-color: #ad1457; 
+    box-shadow: 0 6px 10px rgba(216, 27, 96, 0.6);
+}
+
+/* FOOTER SECTION */
+.footer {
+    padding: 50px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.footer p {
+    margin: 0 0 15px 0;
+}
+
+.footer .social-links a {
+    color: #666;
+    font-size: 22px; /* Disesuaikan agar lebih kecil dari 30px */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #d81b60; 
+}
+
+/* ================================================= */
+/* ====== MEDIA QUERIES UNTUK LAYAR MOBILE (FIX) ===== */
+/* ================================================= */
+
+/* Layar Lebar Maksimal 992px (Tablet ke bawah) */
 @media (max-width: 992px) {
+    /* ORGANIZATION SECTION FIX: Membuat kolom menumpuk */
     .organization {
         min-height: auto; 
         padding: 40px 0;
@@ -499,376 +821,110 @@ header nav a:hover {
         padding: 20px;
     }
 }
-.projects {
-width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    padding: 60px 0;
-    text-align: center;
-    /* background: linear-gradient(to right, #fde2e4, #fad2e1, #f8bbd0);;  */ 
-}
-.project-carousel {
-    overflow-x: scroll; 
-    -webkit-overflow-scrolling: touch; 
-    scroll-snap-type: x mandatory; 
-    margin: 0;           /* hilangkan margin kiri */
-    padding: 0;          /* hilangkan padding kiri & kanan */
-    padding-bottom: 30px; /* tetap ada padding bawah */
-}
 
-.projects .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #d81b60;
-}
-
-.project-carousel {
-    overflow-x: scroll; 
-    
-    /* Opsional tapi Disarankan: Untuk pengalaman sentuh yang lebih baik di perangkat mobile */
-    -webkit-overflow-scrolling: touch; 
-    
-    /* Opsional: Membuat item "menempel" (snap) saat berhenti digeser untuk tampilan yang rapi */
-    scroll-snap-type: x mandatory; 
-    
-    /* ... styling lain ... */
-    
-    margin-left: -15px; 
-    padding-left: 15px; 
-    padding-bottom: 30px; 
-}
-
-/* Mengaktifkan animasi saat elemen terlihat (perlu JS) */
-.project-carousel.fade-in {
-    animation-play-state: running; 
-}
-
-/* Interaksi Hibrida: Menghentikan otomatis saat hover/geser manual */
-.project-carousel:hover {
-    animation-play-state: paused;
-    cursor: grab;
-}
-.project-carousel:active {
-    cursor: grabbing;
-}
-
-/* Scrollbar Styling */
-.project-carousel::-webkit-scrollbar {
-    height: 8px; 
-}
-.project-carousel::-webkit-scrollbar-thumb {
-    background: #d81b60;
-    border-radius: 4px;
-}
-.project-carousel::-webkit-scrollbar-track {
-    background: #f8bbd0;
-}
-
-.carousel-track {
-    display: flex;
-    flex-shrink: 0;
-    gap: 30px;
-    width: fit-content;
-}
-
-/* STYLING TAG <a> */
-.project-link {
-    text-decoration: none; 
-    color: inherit; 
-    flex-shrink: 0; 
-}
-
-/* UMUM: Item Proyek (RASIO 4:5) */
-.project-item {
-    flex-shrink: 0;
-    scroll-snap-align: start; 
-    
-    /* RASIO 4:5 (300px x 375px) */
-    width: 300px; 
-    height: 375px; 
-    
-    /* DEKORASI */
-    background: #fff; 
-    border-radius: 12px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-    
-    display: flex;
-    flex-direction: column; 
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    cursor: pointer; 
-}
-
-/* EFEK HOVER */
-.project-link:hover .project-item {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.project-item img {
-    width: 100%;
-    flex-grow: 1; 
-    /* PERUBAHAN KRITIS: Foto tidak terpotong (contain) */
-    object-fit: contain; 
-    background-color: #f0f0f0; /* Latar belakang untuk mengisi ruang kosong */
-    display: block;
-}
-
-.project-item h4 {
-    display: none; 
-}
-
-.project-item.project-wide {
-    height: 375px; 
-    width: 667px; /* Dihitung 16:9: 375 * (16/9) ≈ 667px */
-}
-
-/* Mengatur lebar khusus untuk Project 6 link */
-.project-link.project-wide-link {
-    width: 667px; 
-    height: 375px; 
-}
-
-/* KUNCI ANIMASI INFINITE SCROLL */
-@keyframes scroll-loop {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        /* Perhitungan total lebar satu track: 4327px */
-        transform: translateX(calc(-300px * 11 - 667px - 30px * 12)); 
-    }
-}
-
-
-/* Media Queries untuk Tampilan Responsif */
+/* Layar Lebar Maksimal 768px (Smartphone Besar/Tablet Kecil) */
 @media (max-width: 768px) {
-    .project-carousel {
-        margin-left: -20px;
-        padding-left: 20px;
+    /* HEADER & NAV */
+    header {
+        padding: 10px 5%; /* Padding header lebih kecil */
     }
-}
-    .project-item {
-        scroll-snap-align: start;
-        width: 250px; 
-        height: 312.5px; /* RASIO 4:5 di mobile: 250 * (5/4) = 312.5px */
+    /* ABOUT SECTION FIX: Konten menumpuk */
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 50px;
     }
-    .carousel-track {
-        gap: 15px;
+    .about-content {
+        margin-left: 0;
+        text-align: center;
+        padding-top: 20px;
     }
-        
+    .about-content h1 {
+        font-size: 40px;
+    }
+    .about-content h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .description-box {
+        max-width: 100%;
+    }
+    .social-icons {
+        justify-content: center;
+    }
     
-    /* RASIO 16:9 UNTUK MOBILE */
+    /* EDUCATION SECTION FIX: 1 KOLOM */
+    .edu-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 5%;
+    }
+    
+    /* EXPERIENCE SECTION FIX */
+    .experience {
+        padding: 40px 5%;
+    }
+    .exp-container {
+        padding: 0 10px;
+    }
+    
+    /* PROJECTS SECTION FIX */
+    .project-carousel {
+        margin-left: -10px;
+        padding-left: 10px;
+    }
+    .project-item {
+        width: 250px; 
+        height: 312.5px; 
+    }
     .project-item.project-wide {
         height: 312.5px;
-        width: 556px; /* Dihitung 16:9: 312.5 * (16/9) ≈ 556px */
+        width: 556px; 
     }
     .project-link.project-wide-link {
         width: 556px;
         height: 312.5px;
     }
     
-    /* Keyframes untuk mobile (Diperbarui dengan ukuran mobile) */
-    @keyframes scroll-loop {
-        0% {
-            transform: translateX(0);
-        }
-        100% 
-        {
-            /* Perhitungan Mobile: 3456px */
-                    transform: translateX(calc(-250px * 11 - 556px - 15px * 12));
-        }
-    }
-/* ======================================= */
-/* ====== CERTIFICATES SECTION CSS (FINAL: FIX CENTERING & FULL COVER) ====== */
-/* ======================================= */
-
-/* ... (Kode .certificates dan .section-title tetap sama) ... */
-
-.certificate-grid {
-    /* MENGECILKAN DAN MEMUSATKAN GRID */
-    max-width: 1000px; 
-    margin: 0 auto 50px auto; 
-    padding: 0 20px;
-    
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
-    gap: 20px; 
-    align-items: stretch; 
-    
-    /* KUNCI FIX CENTERING: Gunakan justify-content: center; */
-    justify-content: center; 
-}
-
-.certificate-card {
-    background: #fff;
-    border-radius: 12px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    padding: 0; 
-    
-    display: flex;
-    flex-direction: column; 
-    text-align: center; 
-}
-
-.certificate-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
-}
-
-.certificate-card a {
-    display: block;
-    width: 100%;
-    /* KUNCI: Tinggi gambar dinaikkan */
-    height: 220px; /* Diperbesar sedikit dari 200px */
-    overflow: hidden;
-}
-
-.certificate-card img {
-    width: 100%;
-    height: 100%;
-    /* KUNCI FIX FULL COVER: object-fit: cover dan pastikan tidak ada padding/margin lain yang mengganggu */
-    object-fit: cover; 
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.certificate-card:hover img {
-    transform: scale(1.02); 
-}
-
-.certificate-title {
-    padding: 8px 5px; 
-    font-size: 1em;
-    font-weight: 600;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    flex-shrink: 0; 
-}
-.certificates .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    
-    /* KUNCI: Tambahkan margin atas, misalnya 20px */
-    margin-top: 30px; 
-    
-    /* Atur margin-bottom sesuai keinginan Anda */
-    margin-bottom: 40px; 
-    
-    color: #d81b60;
-}
-
-/* =================================== */
-/* KUNCI TAMBAHAN UNTUK MEMAKSA CENTERING DI BARIS TERAKHIR */
-/* Gunakan media query yang sama dengan desktop */
-@media (min-width: 1001px) {
-    /* Jika 1000px max-width tidak cukup, kita bisa mencoba flexbox */
-    .certificate-grid:after {
-        content: "";
-        flex-grow: 1;
-    }
-}
-/* =================================== */
-
-/* ... (Kode Tombol tetap sama) ... */
-
-@media (max-width: 768px) {
+    /* CERTIFICATES SECTION FIX: 1 KOLOM UNTUK GAMBAR LEBIH BESAR */
     .certificate-grid {
-        grid-template-columns: repeat(2, minmax(140px, 1fr)); 
+        /* KUNCI FIX: Ubah menjadi 1 kolom */
+        grid-template-columns: 1fr; 
         padding: 0 15px;
-        gap: 15px;
+        max-width: 400px;
     }
     .certificate-card a {
-        height: 140px; 
+        /* Gambar lebih besar di 1 kolom */
+        height: 250px; 
     }
     .certificate-title {
-        font-size: 0.9em;
+        font-size: 1em;
     }
-}
-.see-more {
-    margin-top: 50px; 
-}
-
-.see-more .btn-primary {
-    display: inline-block;
-    padding: 12px 30px;
-    
-    /* KUNCI: BACKGROUND PINK PENUH */
-    background-color: #d81b60; /* Warna pink tema Anda */
-    color: #ffffff; /* Teks berwarna putih */
-    border: none; /* Hapus border */
-    
-    /* KUNCI: SUDUT MEMBULAT */
-    border-radius: 8px; /* Sudut lebih membulat */
-    
-    text-decoration: none;
-    font-weight: 600;
-    
-    transition: background-color 0.3s ease;
-    
-    /* Tambahkan bayangan lembut untuk kesan 3D/modern */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.see-more .btn-primary:hover {
-    /* Sedikit menggelapkan warna saat hover */
-    background-color: #ad1457; 
-}
-
-
-/* Media Queries untuk Tampilan Responsif (HP) */
-@media (max-width: 768px) {
-    /* ... (Kode CSS lainnya tetap sama) ... */
     
     .see-more .btn-primary {
         padding: 10px 25px;
         font-size: 0.9em;
     }
+    
+    /* FOOTER */
+    .footer {
+        padding: 30px 15px;
+    }
 }
 
-/* ======================================= */
-/* ====== FOOTER SECTION CSS (GIRLY & TERANG) ====== */
-/* ======================================= */
-
-.footer {
-    padding: 50px 20px;
-    text-align: center;
-    /* Latar belakang abu-abu sangat terang */
-    /* background: linear-gradient(to right, #fde2e4, #fad2e1, #f8bbd0); /warna bg */
-    font-size: 14px;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-}
-
-.footer p {
-    margin: 0 0 15px 0;
-}
-
-.footer .social-links a {
-    color: #666; /* Ikon abu-abu gelap */
-    font-size: 30px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-.footer .social-links a:hover {
-    /* Ikon menjadi pink saat hover */
-    color: #d81b60; 
-}
-
-/* Media Query untuk Mobile */
+/* Layar Lebar Maksimal 600px (Smartphone Kecil) */
 @media (max-width: 600px) {
-    .contact-form {
-        grid-template-columns: 1fr;
+    /* CONTACT SECTION FIX: 1 KOLOM */
+    .contact {
+        padding: 60px 5%;
     }
     .contact .section-title {
         font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     .btn-send {
         width: 100%;
