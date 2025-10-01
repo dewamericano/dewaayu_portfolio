@@ -56,7 +56,7 @@ header nav a:hover {
 
 /* ABOUT SECTION */
 .about {
-    background-image: url("images/about-bg.jpeg");
+    background-image: url("images/about-bg2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -462,6 +462,7 @@ header nav a:hover {
     padding: 60px 0;
     text-align: center;
 }
+
 .project-carousel {
     overflow-x: scroll; 
     -webkit-overflow-scrolling: touch; 
